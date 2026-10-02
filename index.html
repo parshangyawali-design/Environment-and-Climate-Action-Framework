@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fffefa">
+    <meta name="description" content="Use digital tools to identify environmental and climate problems, share evidence, coordinate local solutions and track progress.">
+    <title>Environment and Climate Action Framework</title>
+    <link rel="icon" type="image/svg+xml" href="climate-action-logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Environment and Climate Action Framework home">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="climate-action-logo.svg" alt="">
+        </span>
+        <span class="brand-name">EC<span>/</span>AF</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="problems.html#problem-form" data-page="problems">Report a problem</a>
+        <a href="solutions.html" data-page="solutions">Solutions</a>
+        <a href="data.html" data-page="data">Climate data</a>
+        <a href="actions.html" data-page="actions">Take action</a>
+      </nav>
+      <div class="header-controls">
+        <button class="settings-trigger" type="button" aria-label="Open appearance settings" aria-controls="settings-panel" aria-expanded="false"><span aria-hidden="true">⚙</span><span class="settings-word">Settings</span></button>
+        <button class="account-trigger" type="button" aria-label="Sign in or create an account" aria-controls="auth-panel"><span aria-hidden="true">◉</span><span id="account-label">Sign in</span></button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero page-wrap" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Digital tools. Environmental solutions. Shared progress.</p>
+          <h1 class="hero-title"><img class="heading-logo" src="climate-action-logo.svg" alt=""><span>Solve environmental<br>and climate problems<br><em>digitally.</em></span></h1>
+          <p class="hero-intro">Use digital tools to identify environmental and climate risks, make reliable information easier to access, connect community reports with people who can respond, and track progress. When a solution needs physical work, use digital coordination to help people get it done safely.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="problems.html#problem-form">Report a local problem <span aria-hidden="true">↘</span></a>
+            <a class="text-link" href="solutions.html#digital-solutions">Explore digital solutions <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-note"><span class="status-dot"></span> Identify digitally. Coordinate locally. Measure what changes.</div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of the Earth surrounded by climate action pathways" role="img">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-label label-top"><span>01</span> UNDERSTAND</div>
+          <div class="art-label label-bottom"><span>04</span> PREPARE</div>
+          <svg class="earth-art" viewBox="0 0 460 460" fill="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="ocean" x1="116" y1="78" x2="354" y2="386" gradientUnits="userSpaceOnUse"><stop stop-color="#B7D7B8"/><stop offset=".53" stop-color="#57856A"/><stop offset="1" stop-color="#235842"/></linearGradient>
+              <linearGradient id="land" x1="119" y1="123" x2="343" y2="345" gradientUnits="userSpaceOnUse"><stop stop-color="#F1DCA7"/><stop offset="1" stop-color="#D49E55"/></linearGradient>
+              <clipPath id="globeClip"><circle cx="230" cy="230" r="157"/></clipPath>
+              <filter id="earthShadow" x="16" y="16" width="428" height="428" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="23"/></filter>
+            </defs>
+            <circle cx="230" cy="246" r="170" fill="#234C39" opacity=".18" filter="url(#earthShadow)"/>
+            <circle cx="230" cy="230" r="157" fill="url(#ocean)"/>
+            <g clip-path="url(#globeClip)">
+              <path d="m101 155 34-32 39-12 28 12 4 20-22 11-9 23-18 12-7 25-24 9-12-11-20 8-14-27 21-19Zm120 69 21 3 14 20-6 19 19 15 5 26-18 32-15 3-10-36-21-17-8-37 19-28Zm76-107 28-11 34 13 18 23-14 19-27-7-9 20-18 1-14-22-16-4-8-19Zm-20 75 22-10 20 12 3 21-22 12-20-9-14 5-13-14Zm-81 131 27-13 26 7 15 19-20 20-29 3-22-18Zm-116-95 25-8 15 17-7 23-17 2-18-14Zm210-42 20-10 23 9 6 16-21 11-18-8Z" fill="url(#land)" opacity=".95"/>
+              <path d="M85 230c39-20 77-28 115-24 34 3 62 16 91 15 31-1 59-13 109-35M95 295c41-17 75-22 107-15 44 10 77 35 121 33 38-1 67-17 95-37M127 106c17 34 28 70 28 110 0 55-16 93-38 140m123-251c-19 43-28 83-27 126 1 46 13 90 31 128m63-238c-25 37-39 76-39 117 0 42 13 82 36 119" stroke="#E6F0DF" stroke-opacity=".2" stroke-width="1.2"/>
+            </g>
+            <circle cx="230" cy="230" r="157" stroke="#F1DCA7" stroke-opacity=".58" stroke-width="1.5"/>
+            <circle cx="230" cy="230" r="168" stroke="#E6E8D9" stroke-opacity=".6"/>
+            <circle cx="341" cy="116" r="5" fill="#E8B974"/>
+            <circle cx="107" cy="301" r="4" fill="#E8B974"/>
+          </svg>
+          <div class="art-caption"><span class="caption-icon">↗</span><span>One planet.<br>Many paths forward.</span></div>
+        </div>
+        <div class="hero-bottom"><span>01 — THE MOMENT</span><span>SCIENCE · SOLUTIONS · SHARED ACTION</span></div>
+      </section>
+
+      <section class="signal-strip" aria-label="Climate indicators">
+        <div class="signal-inner">
+          <p class="signal-label">THE SIGNAL IS CLEAR</p>
+          <div class="signal-stat"><strong>1.1°C</strong><span>Human-caused warming<br>in 2011–2020 <a href="#source-ipcc" aria-label="See IPCC source">[1]</a></span></div>
+          <div class="signal-stat"><strong>1.55°C</strong><span>Estimated global average<br>in 2024 <a href="#source-wmo" aria-label="See WMO source">[2]</a></span></div>
+          <p class="signal-context">Interactive climate and emissions data, sourced from published research. <a href="#climate-data">Explore the data ↗</a></p>
+        </div>
+      </section>
+
+      <section class="section page-wrap problems-section" id="problems">
+        <div class="actions-top">
+          <div class="section-heading">
+            <p class="eyebrow"><span class="eyebrow-line"></span> 02 / Identify the problem</p>
+            <h2>Start by seeing<br><em>what is happening.</em></h2>
+          </div>
+          <p class="actions-lede">Climate problems cross digital systems, local places and public policy. Diagnose the issue before choosing a response—online data can guide action, but it cannot replace every kind of on-the-ground work.</p>
+        </div>
+        <div class="problem-grid">
+          <article class="problem-card">
+            <span class="problem-type">01 / DIGITAL SIGNALS</span><span class="problem-icon" aria-hidden="true">⌁</span>
+            <h3>Find patterns in the data</h3>
+            <p>Use satellite imagery, weather observations, public emissions inventories and open data to detect heat, smoke, land-cover loss, pollution and climate trends.</p>
+            <div class="problem-tags"><span>REMOTE SENSING</span><span>OPEN DATA</span><span>MAPS</span></div>
+          </article>
+          <article class="problem-card">
+            <span class="problem-type">02 / PHYSICAL REALITIES</span><span class="problem-icon" aria-hidden="true">⌖</span>
+            <h3>Listen on the ground</h3>
+            <p>Map who is affected. Site visits, community knowledge, local monitoring and qualified environmental assessments reveal what online maps can miss.</p>
+            <div class="problem-tags"><span>COMMUNITY INPUT</span><span>FIELD CHECKS</span><span>LOCAL RISK</span></div>
+          </article>
+          <article class="problem-card">
+            <span class="problem-type">03 / CONNECT THE EVIDENCE</span><span class="problem-icon" aria-hidden="true">⊕</span>
+            <h3>Verify before you act</h3>
+            <p>Compare credible sources, check dates and uncertainty, confirm findings with local people and authorities, and identify who has the power to make change.</p>
+            <div class="problem-tags"><span>VERIFY</span><span>CONSULT</span><span>PRIORITIZE</span></div>
+          </article>
+        </div>
+        <p class="section-footnote">Digital monitoring is an early-warning and decision-support tool—not proof of local damage on its own or a substitute for the consent and knowledge of affected communities.</p>
+      </section>
+
+      <section class="section page-wrap challenge-section" id="challenge">
+        <div class="section-heading">
+          <p class="eyebrow"><span class="eyebrow-line"></span> 03 / The challenge</p>
+          <h2>A changing climate<br>changes <em>everything.</em></h2>
+        </div>
+        <div class="challenge-intro">
+          <p>The climate has always varied. What is different now is the speed and cause: human activities—principally burning fossil fuels, land-use change and agriculture—are warming the atmosphere, ocean and land. <a href="#source-ipcc">[1]</a></p>
+          <span class="small-rule"></span>
+          <p class="muted">Climate impacts are already affecting people and nature. The risks are unequal: those who contributed least to the problem often have fewer resources to respond.</p>
+        </div>
+        <div class="challenge-grid">
+          <article class="challenge-card">
+            <span class="card-index">A / EXTREMES</span>
+            <span class="challenge-icon" aria-hidden="true">↗</span>
+            <h3>More dangerous heat</h3>
+            <p>Warming intensifies heat extremes and raises risks to health, work, crops and infrastructure.</p>
+            <span class="card-foot">HEAT · HEALTH · LIVELIHOODS</span>
+          </article>
+          <article class="challenge-card">
+            <span class="card-index">B / WATER</span>
+            <span class="challenge-icon" aria-hidden="true">⌁</span>
+            <h3>A changing water cycle</h3>
+            <p>Heavier rainfall and flooding in some places; longer or more severe drought in others.</p>
+            <span class="card-foot">FLOODS · DROUGHT · FOOD</span>
+          </article>
+          <article class="challenge-card">
+            <span class="card-index">C / NATURE</span>
+            <span class="challenge-icon" aria-hidden="true">⌘</span>
+            <h3>Nature under pressure</h3>
+            <p>Rapid environmental shifts put ecosystems and the people who depend on them at risk.</p>
+            <span class="card-foot">ECOSYSTEMS · SPECIES · COASTS</span>
+          </article>
+        </div>
+        <p class="section-footnote">Climate risks are shaped by exposure and vulnerability, not temperature alone. Adaptation and fairness are essential parts of the response. <a href="#source-ipcc">Explore the evidence ↗</a></p>
+      </section>
+
+      <section class="framework-section" id="framework">
+        <div class="page-wrap framework-layout">
+          <div class="framework-intro">
+            <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> 02 / Our framework</p>
+            <h2>Turn concern<br>into <em>direction.</em></h2>
+            <p>Effective climate action is not one silver bullet. It is a coordinated effort to cut the cause, protect what matters and prepare for changes already underway.</p>
+            <a class="button button-light" href="#actions">Find your next step <span aria-hidden="true">↘</span></a>
+            <div class="framework-stamp" aria-hidden="true">A<br>SHARED<br>AGENDA</div>
+          </div>
+          <div class="framework-steps">
+            <article class="framework-step">
+              <span class="step-number">01</span><div><h3>Understand</h3><p>Use credible evidence to see the causes, impacts and local risks clearly.</p></div><span class="step-arrow">↗</span>
+            </article>
+            <article class="framework-step">
+              <span class="step-number">02</span><div><h3>Reduce</h3><p>Cut greenhouse-gas emissions through cleaner energy, efficient systems and better choices.</p></div><span class="step-arrow">↗</span>
+            </article>
+            <article class="framework-step">
+              <span class="step-number">03</span><div><h3>Restore</h3><p>Protect and repair ecosystems while supporting the communities who care for them.</p></div><span class="step-arrow">↗</span>
+            </article>
+            <article class="framework-step">
+              <span class="step-number">04</span><div><h3>Prepare</h3><p>Build resilience to heat, floods and other risks—with local knowledge and fairness at the centre.</p></div><span class="step-arrow">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section page-wrap solutions-section" id="solutions">
+        <div class="actions-top">
+          <div class="section-heading">
+            <p class="eyebrow"><span class="eyebrow-line"></span> 04 / Match the solution to the problem</p>
+            <h2>Digital tools.<br><em>Real-world change.</em></h2>
+          </div>
+          <p class="actions-lede">Digital tools help us measure, coordinate and communicate. Physical problems often also need skilled people, safe equipment, materials, funding and long-term care.</p>
+        </div>
+        <div class="solution-columns">
+          <article class="solution-column digital-column">
+            <div class="solution-column-heading"><span>01</span><div><span class="solution-kicker">SOLVE DIGITALLY</span><h3>When information and coordination can move the needle</h3></div></div>
+            <ul class="solution-list">
+              <li><span>↗</span><div><strong>Monitor and alert</strong><p>Share verified heat, wildfire-smoke and flood warnings from official sources.</p></div></li>
+              <li><span>↗</span><div><strong>Map and prioritize</strong><p>Use open maps and satellite observations to guide inspections and protection plans.</p></div></li>
+              <li><span>↗</span><div><strong>Coordinate and advocate</strong><p>Connect volunteers, publish transparent evidence and ask decision-makers for measurable action.</p></div></li>
+              <li><span>↗</span><div><strong>Cut digital waste</strong><p>Extend device life, reduce unnecessary storage and video use, and choose efficient settings; cleaner electricity matters most to digital infrastructure emissions.</p></div></li>
+            </ul>
+          </article>
+          <article class="solution-column physical-column">
+            <div class="solution-column-heading"><span>02</span><div><span class="solution-kicker">ACT PHYSICALLY</span><h3>When a place, material or living system needs care</h3></div></div>
+            <ul class="solution-list">
+              <li><span>↗</span><div><strong>Restore with local expertise</strong><p>Fund locally led habitat and wetland recovery with ecological monitoring and long-term stewardship.</p></div></li>
+              <li><span>↗</span><div><strong>Make places safer</strong><p>Plant and maintain appropriate urban shade, improve drainage and cooling access, and protect safe evacuation routes.</p></div></li>
+              <li><span>↗</span><div><strong>Repair and replace equipment</strong><p>Use qualified technicians to find refrigerant leaks, recover legacy CFCs and safely dispose of old cooling equipment.</p></div></li>
+              <li><span>↗</span><div><strong>Organize for lasting change</strong><p>Work with residents, scientists and public services on funded, accountable plans—not one-off clean-ups alone.</p></div></li>
+            </ul>
+          </article>
+        </div>
+        <p class="physical-safety-note"><strong>Safety note</strong> Avoid entering floodwater, handling unknown chemicals or refrigerants, disturbing suspected hazardous materials, or attempting electrical or refrigerant repairs. Contact trained local professionals and emergency services.</p>
+      </section>
+
+      <section class="climate-data-section" id="climate-data">
+        <div class="page-wrap">
+          <div class="data-heading">
+            <div><p class="eyebrow"><span class="eyebrow-line"></span> 05 / See the evidence</p><h2>250 years of change.<br><em>A world keeping score.</em></h2></div>
+            <p>Industry transformed the atmosphere; modern measurements let us track the consequences. This chart begins with the global instrumental temperature record, which starts in 1850. The earlier 1750 marker is historical context—not an instrumental measurement.</p>
+          </div>
+          <div class="temperature-card">
+            <div class="chart-heading"><div><span class="chart-kicker">GLOBAL CLIMATE RECORD</span><h3>Annual global temperature anomaly</h3></div><span class="chart-unit">°C vs. 1850–1900 average</span></div>
+            <div class="chart-legend"><span><i></i> Global mean temperature anomaly</span><span class="chart-source-label">Annual observations · 1850 to latest complete year</span></div>
+            <div class="temperature-chart-wrap">
+              <svg id="temperature-chart" class="temperature-chart" viewBox="0 0 880 340" role="img" aria-labelledby="temperature-chart-title temperature-chart-desc" preserveAspectRatio="none">
+                <title id="temperature-chart-title">Annual global temperature anomaly from 1850 to the latest complete year</title>
+                <desc id="temperature-chart-desc">Loading published global temperature records.</desc>
+                <g id="temperature-y-labels" class="chart-labels" aria-hidden="true"></g>
+                <g id="temperature-x-labels" class="chart-labels" aria-hidden="true"></g>
+                <path id="temperature-area" class="chart-area" d=""></path>
+                <path id="temperature-line" class="chart-line" d=""></path>
+                <circle id="temperature-current-dot" class="chart-dot" cx="0" cy="0" r="5" visibility="hidden"></circle>
+              </svg>
+              <div id="chart-tooltip" class="chart-tooltip" role="status" hidden></div>
+            </div>
+            <div class="chart-annotations"><span><strong>1750</strong> Industrial-era context; reconstructed estimates, not modern instrument readings</span><span><strong>1850</strong> Start of the global instrumental record shown here</span></div>
+            <p class="chart-status" id="climate-data-status" role="status">Loading data from Our World in Data…</p>
+          </div>
+          <div class="emissions-overview">
+            <div class="emissions-head"><div><span class="chart-kicker">EMISSIONS SNAPSHOT</span><h3>What enters the atmosphere—and where</h3></div><span class="data-year">LATEST VERIFIED INVENTORY · 2023</span></div>
+            <div class="emissions-metrics">
+              <article class="emission-metric co2-metric"><span>FOSSIL-FUEL &amp; INDUSTRIAL CO₂</span><strong>≈ <b id="daily-co2">105.8</b> Mt / day</strong><p>World 2024 total divided by 365 days. This is a calculated annual average—not a daily live measurement. <a href="#source-owid-co2">Source ↗</a></p></article>
+              <article class="emission-metric cfc-metric"><span>CFCs · OZONE-DEPLETING GASES</span><strong>Tracked monthly, not as a global daily tally</strong><p>No comparable, authoritative global daily CFC emissions figure is provided in the cited inventories. NOAA tracks CFC atmospheric concentrations; the Montreal Protocol reports national production and consumption. <a href="#source-noaa-cfc">Why it differs ↗</a></p></article>
+            </div>
+            <p class="table-note">Largest territorial greenhouse-gas inventories in 2023. Values are annual GHG emissions in CO₂-equivalent—not daily CO₂ emissions. This current-year ranking is not a measure of historical, per-person or consumption-based responsibility. EU27 is a regional bloc.</p>
+            <div class="table-scroll"><table class="country-table"><caption class="visually-hidden">Largest greenhouse gas emitters by country or region in 2023, excluding land use, land-use change and forestry</caption><thead><tr><th scope="col">Country / region</th><th scope="col">2023 GHG emissions</th><th scope="col">Share of world total</th><th scope="col">One high-impact lever</th></tr></thead><tbody>
+              <tr><th scope="row">China</th><td>15.94 Gt CO₂e</td><td>30.10%</td><td>Clean electricity &amp; industrial heat</td></tr>
+              <tr><th scope="row">United States</th><td>5.96 Gt CO₂e</td><td>11.25%</td><td>Power, transport &amp; methane</td></tr>
+              <tr><th scope="row">India</th><td>4.13 Gt CO₂e</td><td>7.80%</td><td>Clean growth &amp; resilient cities</td></tr>
+              <tr><th scope="row">European Union (EU27)</th><td>3.22 Gt CO₂e</td><td>6.08%</td><td>Efficiency &amp; clean industry</td></tr>
+              <tr><th scope="row">Russia</th><td>2.67 Gt CO₂e</td><td>5.05%</td><td>Energy efficiency &amp; methane</td></tr>
+              <tr><th scope="row">Brazil</th><td>1.30 Gt CO₂e</td><td>2.45%</td><td>End deforestation &amp; protect ecosystems</td></tr>
+            </tbody></table></div>
+            <p class="emissions-footnote">2023 country shares and GHG totals: European Commission Joint Research Centre EDGAR 2024 report, excluding land use, land-use change and forestry. CO₂/day: Our World in Data annual fossil and industrial CO₂ total for 2024 ÷ 365. Different inventories and greenhouse-gas scopes are labelled separately; do not add the daily CO₂ figure to the country GHG table.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section page-wrap actions-section" id="actions">
+        <div class="actions-top">
+          <div class="section-heading">
+            <p class="eyebrow"><span class="eyebrow-line"></span> 06 / Make it practical</p>
+            <h2>Progress starts<br>with <em>a next step.</em></h2>
+          </div>
+          <p class="actions-lede">Choose a place to begin. Individual choices matter most when they add to wider changes in our communities, institutions and systems.</p>
+        </div>
+        <div class="filter-bar" role="group" aria-label="Filter actions by focus area">
+          <span class="filter-label">EXPLORE BY FOCUS</span>
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All actions</button>
+          <button class="filter-button" type="button" data-filter="reduce" aria-pressed="false">Reduce</button>
+          <button class="filter-button" type="button" data-filter="restore" aria-pressed="false">Restore</button>
+          <button class="filter-button" type="button" data-filter="prepare" aria-pressed="false">Prepare</button>
+        </div>
+        <div class="action-grid">
+          <article class="action-card" data-category="reduce">
+            <span class="action-number">01 <span>REDUCE</span></span><span class="action-symbol" aria-hidden="true">↗</span>
+            <h3>Choose cleaner energy</h3><p>Ask your utility or local representative about renewable electricity and a fair, reliable transition.</p>
+            <button class="action-check" type="button" data-action="energy" aria-pressed="false"><span class="check-mark" aria-hidden="true"></span><span class="check-copy">Add to my action list</span></button>
+          </article>
+          <article class="action-card" data-category="reduce">
+            <span class="action-number">02 <span>REDUCE</span></span><span class="action-symbol" aria-hidden="true">⌁</span>
+            <h3>Make everyday travel count</h3><p>Where it works for you, try public transport, walking, cycling or sharing a ride—and advocate for better options.</p>
+            <button class="action-check" type="button" data-action="travel" aria-pressed="false"><span class="check-mark" aria-hidden="true"></span><span class="check-copy">Add to my action list</span></button>
+          </article>
+          <article class="action-card" data-category="restore">
+            <span class="action-number">03 <span>RESTORE</span></span><span class="action-symbol" aria-hidden="true">⌘</span>
+            <h3>Back local nature</h3><p>Support locally led habitat restoration, urban trees or the protection of wetlands and other ecosystems.</p>
+            <button class="action-check" type="button" data-action="nature" aria-pressed="false"><span class="check-mark" aria-hidden="true"></span><span class="check-copy">Add to my action list</span></button>
+          </article>
+          <article class="action-card" data-category="prepare">
+            <span class="action-number">04 <span>PREPARE</span></span><span class="action-symbol" aria-hidden="true">⌖</span>
+            <h3>Know your local risks</h3><p>Find trusted local guidance for heat, floods, wildfire or other hazards that may affect your area.</p>
+            <button class="action-check" type="button" data-action="preparedness" aria-pressed="false"><span class="check-mark" aria-hidden="true"></span><span class="check-copy">Add to my action list</span></button>
+          </article>
+          <article class="action-card" data-category="reduce">
+            <span class="action-number">05 <span>REDUCE</span></span><span class="action-symbol" aria-hidden="true">↘</span>
+            <h3>Use your civic voice</h3><p>Ask decision-makers for measurable climate plans, transparent progress and support for affected communities.</p>
+            <button class="action-check" type="button" data-action="civic" aria-pressed="false"><span class="check-mark" aria-hidden="true"></span><span class="check-copy">Add to my action list</span></button>
+          </article>
+          <article class="action-card" data-category="prepare">
+            <span class="action-number">06 <span>PREPARE</span></span><span class="action-symbol" aria-hidden="true">◎</span>
+            <h3>Strengthen community</h3><p>Check in on neighbours and support community-led plans that protect people during extreme weather.</p>
+            <button class="action-check" type="button" data-action="community" aria-pressed="false"><span class="check-mark" aria-hidden="true"></span><span class="check-copy">Add to my action list</span></button>
+          </article>
+        </div>
+        <div class="action-progress" aria-live="polite">
+          <div class="progress-icon" aria-hidden="true">✳</div>
+          <div><strong id="progress-title">Your action list is ready.</strong><p id="progress-copy">Pick the steps that feel useful and realistic for you.</p></div>
+          <div class="progress-count"><span id="action-count">0</span><span>SELECTED</span></div>
+          <button class="reset-actions" id="reset-actions" type="button" hidden>Clear list</button>
+        </div>
+        <p class="action-disclaimer">Actions are starting points, not a substitute for policy, infrastructure or collective change. Choose what is safe, accessible and relevant in your context.</p>
+      </section>
+
+      <section class="evidence-section" id="evidence">
+        <div class="page-wrap evidence-layout">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> 04 / Evidence matters</p>
+            <h2>Facts worth<br><em>holding onto.</em></h2>
+          </div>
+          <div class="evidence-copy">
+            <p>The 1.5°C figure is a long-term global limit, not a line that one unusually hot year can cross on its own. In 2024, the World Meteorological Organization estimated annual global temperature at 1.55 ± 0.13°C above the 1850–1900 average—the first calendar year likely above 1.5°C. Long-term warming averaged across decades remains below 1.5°C. <a href="#source-wmo">[2]</a></p>
+            <p>That distinction is not a reason to delay. Every increment of warming increases climate risks, and rapid emissions cuts alongside adaptation can reduce future harm. <a href="#source-ipcc">[1]</a></p>
+            <a class="text-link" href="#sources">Read the source notes <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sources-section page-wrap" id="sources">
+        <div class="sources-heading">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> 05 / Research notes</p><h2>Start with<br><em>trusted sources.</em></h2></div>
+          <p>Key claims on this page draw on scientific assessments and public institutions. Follow the references to explore the evidence in full.</p>
+        </div>
+        <div class="source-list">
+          <article class="source-item" id="source-ipcc"><span class="source-number">[1]</span><div><h3>IPCC — Climate Change 2023: Synthesis Report</h3><p>Assessment of observed warming, human influence, climate impacts and feasible mitigation and adaptation responses.</p></div><a href="https://www.ipcc.ch/report/ar6/syr/" target="_blank" rel="noopener noreferrer" aria-label="Open the IPCC Synthesis Report">Read report ↗</a></article>
+          <article class="source-item" id="source-wmo"><span class="source-number">[2]</span><div><h3>WMO — State of the Global Climate 2024</h3><p>Reports 2024 as the warmest year in the observational record, at 1.55 ± 0.13°C above 1850–1900, and clarifies that a single year above 1.5°C is not the same as crossing the long-term Paris threshold.</p></div><a href="https://wmo.int/publication-series/state-of-global-climate/state-of-global-climate-2024" target="_blank" rel="noopener noreferrer" aria-label="Open WMO State of the Global Climate 2024">Read report ↗</a></article>
+          <article class="source-item" id="source-un"><span class="source-number">[3]</span><div><h3>United Nations — The Paris Agreement</h3><p>Overview of the agreement’s goals, including holding warming well below 2°C and pursuing efforts to limit it to 1.5°C.</p></div><a href="https://www.un.org/en/climatechange/paris-agreement" target="_blank" rel="noopener noreferrer" aria-label="Open the United Nations Paris Agreement overview">Read overview ↗</a></article>
+          <article class="source-item" id="source-nasa"><span class="source-number">[4]</span><div><h3>NASA — Evidence for Climate Change</h3><p>Accessible overview of the multiple independent observations documenting a warming planet and its changing climate.</p></div><a href="https://science.nasa.gov/climate-change/evidence/" target="_blank" rel="noopener noreferrer" aria-label="Open NASA's evidence for climate change">Explore evidence ↗</a></article>
+          <article class="source-item" id="source-owid-temperature"><span class="source-number">[5]</span><div><h3>Our World in Data — Global temperature anomaly</h3><p>Annual global temperature estimates and uncertainty ranges compiled from HadCRUT5 observations; historical estimates are not available as a continuous modern instrumental record back to 1750.</p></div><a href="https://ourworldindata.org/grapher/temperature-anomaly" target="_blank" rel="noopener noreferrer" aria-label="Open Our World in Data global temperature series">Open data ↗</a></article>
+          <article class="source-item" id="source-owid-co2"><span class="source-number">[6]</span><div><h3>Our World in Data — Annual CO₂ emissions by country</h3><p>Fossil-fuel and industry CO₂ totals used to calculate the clearly labelled 2024 global daily average; annual total divided by 365.</p></div><a href="https://ourworldindata.org/grapher/annual-co2-emissions-per-country" target="_blank" rel="noopener noreferrer" aria-label="Open Our World in Data country CO2 emissions series">Open data ↗</a></article>
+          <article class="source-item" id="source-edgar"><span class="source-number">[7]</span><div><h3>European Commission JRC — EDGAR 2024 GHG report</h3><p>Country and regional greenhouse-gas emissions for 2023 in CO₂-equivalent, excluding land use, land-use change and forestry. Comparisons by one recent year are not historical or per-capita responsibility assessments.</p></div><a href="https://edgar.jrc.ec.europa.eu/report_2024" target="_blank" rel="noopener noreferrer" aria-label="Open European Commission EDGAR emissions report">Read report ↗</a></article>
+          <article class="source-item" id="source-noaa-cfc"><span class="source-number">[8]</span><div><h3>NOAA GML &amp; UNEP — CFC monitoring and Montreal Protocol</h3><p>NOAA derives global CFC-11 averages from background-air monitoring; those abundance records are monthly, not a daily global emissions census. The Montreal Protocol controls production and consumption and phases out ozone-depleting substances.</p></div><a href="https://gml.noaa.gov/aggi/aggi.html" target="_blank" rel="noopener noreferrer" aria-label="Open NOAA greenhouse gas index and CFC observations">NOAA monitoring ↗</a> <a href="https://ozone.unep.org/treaties/montreal-protocol" target="_blank" rel="noopener noreferrer">UNEP protocol ↗</a></article>
+        </div>
+        <p class="research-note">This educational resource is not a substitute for local scientific advice, emergency guidance or professional consultation. Climate risks and the best responses vary by place.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-wrap footer-top"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4.5C11.44 4.5 4.5 11.44 4.5 20S11.44 35.5 20 35.5 35.5 28.56 35.5 20" stroke="currentColor" stroke-width="2.5"/><path d="M13 24.5c.2-6.25 4.5-10.4 13.3-12.35-.75 8.4-4.7 12.55-13.3 12.35Z" fill="currentColor"/><path d="M12.5 29c3.1-4.25 6.65-7.7 10.65-10.35" stroke="#183C30" stroke-width="1.8" stroke-linecap="round"/><path d="M25 5.5c4 2.1 6.95 5.3 8.85 9.6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></span><span class="brand-name">EC<span>/</span>AF</span></a><p>Environment and Climate Action Framework</p><a href="#top" class="back-top">Back to top ↑</a></div>
+      <div class="page-wrap footer-bottom"><span>SCIENCE-LED · PEOPLE-CENTRED · ACTION-ORIENTED</span><span>One shared future. Many ways to protect it.</span></div>
+    </footer>
+
+    <dialog class="settings-dialog" id="settings-panel" aria-labelledby="settings-title">
+      <div class="dialog-topline"><span class="chart-kicker">PERSONALISE YOUR VIEW</span><button class="dialog-close" type="button" data-close-settings aria-label="Close settings">×</button></div>
+      <h2 id="settings-title">Appearance settings</h2>
+      <p>Choose the display that feels right. Your preference is saved on this device.</p>
+      <fieldset class="theme-options"><legend>Choose a colour theme</legend>
+        <label class="theme-option light-option"><input type="radio" name="theme" value="light"><span class="theme-swatch" aria-hidden="true"></span><span><strong>Gold · White · Silver</strong><small>Bright, formal, and calm</small></span></label>
+        <label class="theme-option dark-option"><input type="radio" name="theme" value="dark"><span class="theme-swatch" aria-hidden="true"></span><span><strong>Blue · Red · Black</strong><small>Dark mode with bright accents</small></span></label>
+      </fieldset>
+      <p class="settings-note">Chatbot API keys are private server settings and should never be entered into this page.</p>
+    </dialog>
+
+    <dialog class="auth-dialog" id="auth-panel" aria-labelledby="auth-title">
+      <div class="auth-visual">
+        <div class="auth-orbit" aria-hidden="true"><span>●</span><i></i></div>
+        <p class="auth-eyebrow">A SHARED FRAMEWORK</p>
+        <h2>Make your<br>next move <em>matter.</em></h2>
+        <p>Save a place in the conversation and come back to the work that matters.</p>
+      </div>
+      <div class="auth-content">
+        <div class="auth-topline"><span class="chart-kicker">ENVIRONMENT &amp; CLIMATE ACTION</span><button class="dialog-close" type="button" data-close-auth aria-label="Close sign-in">×</button></div>
+        <div class="auth-tabs" role="tablist" aria-label="Account options">
+          <button class="auth-tab is-active" type="button" id="signin-tab" role="tab" aria-selected="true" aria-controls="auth-form-panel" data-auth-mode="login">Sign in</button>
+          <button class="auth-tab" type="button" id="register-tab" role="tab" aria-selected="false" aria-controls="auth-form-panel" data-auth-mode="register">Create account</button>
+        </div>
+        <div id="auth-form-panel" role="tabpanel" aria-labelledby="signin-tab">
+          <h2 id="auth-title">Welcome back.</h2>
+          <p class="auth-intro" id="auth-intro">Sign in to continue your climate action journey.</p>
+          <form class="auth-form" id="auth-form">
+            <label id="name-field" hidden for="auth-name">Your name</label><input id="auth-name" name="name" type="text" autocomplete="name" maxlength="60" placeholder="Your name" hidden>
+            <label id="email-label" for="auth-email">Email or admin username</label><input id="auth-email" name="email" type="text" inputmode="email" autocomplete="username" maxlength="254" placeholder="Email address or admin" required>
+            <label for="auth-password">Password</label><input id="auth-password" name="password" type="password" autocomplete="current-password" maxlength="128" placeholder="Password (admin demo: admin)" required>
+            <button class="button button-primary auth-submit" type="submit"><span id="auth-submit-text">Sign in securely</span><span aria-hidden="true">↗</span></button>
+            <p class="auth-feedback" id="auth-feedback" role="status" aria-live="polite"></p>
+          </form>
+          <p class="auth-privacy-note">Prototype accounts are stored on this server with salted, hashed passwords. Use a unique password; do not use a password from another service. Email is not verified.</p>
+        </div>
+        <div class="auth-session" id="auth-session" hidden>
+          <span class="auth-session-mark" aria-hidden="true">✓</span><span class="auth-role-badge" id="auth-role-badge" hidden>ADMINISTRATOR PROFILE</span><h2 id="session-greeting">You’re signed in.</h2><p id="session-copy">Your account is safely connected to this local prototype.</p>
+          <section class="admin-report-panel" id="admin-report-panel" aria-labelledby="admin-reports-title" hidden>
+            <div class="admin-report-heading"><h3 id="admin-reports-title">Community problem reports</h3><button class="admin-refresh-button" id="refresh-admin-problems" type="button">Refresh</button></div>
+            <p class="admin-report-status" id="admin-report-status" role="status" aria-live="polite"></p>
+            <div class="admin-problem-list" id="admin-problem-list"></div>
+          </section>
+          <button class="button button-primary" id="signout-button" type="button">Sign out</button>
+          <p class="auth-privacy-note">Your account data stays in the local server’s private API data folder. Restarting this prototype signs you out.</p>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>

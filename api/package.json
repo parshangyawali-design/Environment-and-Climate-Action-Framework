@@ -1,0 +1,12 @@
+{
+  "name": "environment-climate-action-framework-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local website, account, community report and climate data APIs",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env local-server.cjs"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "environment-climate-action-framework",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "start": "npm --prefix api start",
+    "vercel-build": "node --check \"api/[...path].js\" && node --check api/_lib/vercel-api.cjs"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.2"
+  }
+}

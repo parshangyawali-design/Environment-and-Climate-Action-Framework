@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none">
+  <defs>
+    <linearGradient id="planet" x1="18" y1="12" x2="78" y2="82" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D7AE55"/>
+      <stop offset=".48" stop-color="#478B61"/>
+      <stop offset="1" stop-color="#2570A7"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="37" y1="28" x2="67" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#93C879"/>
+      <stop offset="1" stop-color="#277348"/>
+    </linearGradient>
+  </defs>
+  <circle cx="48" cy="48" r="39" stroke="url(#planet)" stroke-width="4"/>
+  <path d="M11 48h74M48 9c11 11 17 24 17 39S59 76 48 87M48 9C37 20 31 33 31 48s6 28 17 39" stroke="url(#planet)" stroke-opacity=".65" stroke-width="2.5"/>
+  <path d="M31 56c2-15 13-25 36-29-2 22-13 33-36 29Z" fill="url(#leaf)"/>
+  <path d="M27 70c10-13 20-22 34-31" stroke="#F8F6EB" stroke-linecap="round" stroke-width="3.5"/>
+  <path d="M70 19l4-8m5 15 8-3" stroke="#C3434D" stroke-linecap="round" stroke-width="3"/>
+</svg>
